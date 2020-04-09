@@ -1,0 +1,38 @@
+<!--pages/otherUser/userInfo/userInfo.wxml-->
+<view>
+	<view class="head-view">
+		<view class="select-right">
+			<view class="select-repo">
+				<view class="{{selectType == 0?'select':'unselect'}}" bindtap="selectTag" data-tag="0">REPO</view>
+				<view class="bottom-line" wx:if="{{selectType == 0}}"></view>
+			</view>
+			<view class="select-repo">
+				<view class="{{selectType == 1?'select':'unselect'}}" bindtap="selectTag" data-tag="1">STARS</view>
+				<view class="bottom-line" wx:if="{{selectType == 1}}"></view>
+			</view>
+			<view class="select-repo">
+				<view class="{{selectType == 2?'select':'unselect'}}" bindtap="selectTag" data-tag="2">FOLLOWER</view>
+				<view class="bottom-line" wx:if="{{selectType == 2}}"></view>
+			</view>
+			<view class="select-repo">
+				<view class="{{selectType == 3?'select':'unselect'}}" bindtap="selectTag" data-tag="3">FOLLOWING</view>
+				<view class="bottom-line" wx:if="{{selectType == 3}}"></view>
+			</view>
+		</view>
+	</view>
+	<view class="item-view">
+		<block wx:for="{{array}}">
+			<view bindtap="toRepoDetail" data-author="{{item.owner.login}}" data-name="{{item.name}}" wx:if="{{selectType == 0 || selectType == 1}}">
+				<component-item repo="{{item.owner.login +'/'+ item.name}}" avatar="{{item.avatar}}" color="{{item.languageColor}}" desc="{{item.description}}" lang="{{item.language}}" stars="{{item.stargazers_count}}" forks="{{item.forks_count}}" added_stars="{{item.updated_at}}" currentSince="1" type="1"></component-item>
+			</view>
+			<view bindtap="toUserDetail" data-user="{{item.login}}" wx:if="{{selectType == 2 || selectType == 3}}">
+					<view class="follow-view">
+						<van-image round width="30px" height="30px" src="{{item.avatar_url}}"/>
+						<text style="color:#495060;font-size:26rpx;margin-left:30rpx">{{item.login}}</text>
+					</view>
+			</view>
+		</block>
+		<view style="height:15rpx;background:#fff;width:100%"></view>
+	</view>
+
+</view>

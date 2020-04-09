@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<view class="contains-view">
+    <view class="top-view" style="height:450rpx;background:#0387FE;">
+        <image class="logo" src="/images/github_logo.png"></image>
+    </view>
+    <view class="login-view">
+      <label style="color:#0387FE;font-weight:bold;margin-top:45rpx;">Token</label>
+      <view class="token-view">
+          <label style="color:#1c2438;">Token:</label>
+          <input class="input" placeholder="please input token" placeholder-style="font-size:28rpx;color:#e9eaec" bindblur="getTokenCode"></input>
+      </view>
+      <view style="height:1rpx;background:#e9eaec;width:400rpx;margin-top:35rpx;"></view>
+      <view class="commit-token" bindtap="loginToGithub">Login</view>
+    </view>
+    <view style="margin-top:300rpx;padding:30rpx;color:#80848f;font-size:28rpx;">
+      <view>Tip:</view>
+      <view style="color:#80848f;font-size:22rpx;">1.为了用户信息安全,本小程序只支持Token登录</view>
+      <view style="color:#80848f;font-size:22rpx;">2.Token仅用于Github Api权限校验，不会上传服务器</view>
+      <view style="color:#80848f;font-size:22rpx;margin-top:15rpx;margin-bottom:15rpx;color:#0387FE;" bindtap="copyUrl">3.Token生成方式点我,打开浏览器粘贴后按照步骤即可生成Token</view>
+      <view style="color:#80848f;font-size:22rpx;">4.小程序代码已在Github开源,搜索：GitMyHub</view>
+    </view>
+    
+</view>

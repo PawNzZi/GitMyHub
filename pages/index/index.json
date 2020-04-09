@@ -1,0 +1,12 @@
+{
+  "enablePullDownRefresh":true ,
+  "backgroundTextStyle":"dark" ,
+  "navigationBarTitleText":"Trending",
+  "usingComponents": {
+    "van-icon": "../../../dist/icon/index",
+    "component-item": "../../component/item/item",
+    "component-index": "../../component/user-item/index",
+    "van-action-sheet": "../../dist/action-sheet/index",
+    "van-picker": "../../dist/picker/index"
+  }
+}

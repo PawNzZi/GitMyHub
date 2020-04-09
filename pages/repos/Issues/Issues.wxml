@@ -1,0 +1,37 @@
+<!--pages/repos/Issues/Issues.wxml-->
+<view>
+	<view class="head-view">
+		<view class="select-right">
+			<view class="select-repo">
+				<view class="{{selectType == 0?'select':'unselect'}}" bindtap="selectTag" data-tag="0">OPEN</view>
+				<view class="bottom-line" wx:if="{{selectType == 0}}"></view>
+			</view>
+			<view class="select-repo">
+				<view class="{{selectType == 1?'select':'unselect'}}" bindtap="selectTag" data-tag="1">CLOSE</view>
+				<view class="bottom-line" wx:if="{{selectType == 1}}"></view>
+			</view>
+		</view>
+	</view>
+	<view class="icon-view" wx:if="{{!nodata}}">
+		<image class="tipImg" src="/images/github.jpg"></image>
+		<view style="font-size:28rpx;color:#bbbec4;margin-top:20rpx;margin-bottom:30rpx;text-align: center;">-- no more data --</view>
+	</view>
+	<view class="item-view" wx:else>
+		<block wx:for="{{array}}">
+			<view class="item-c">
+				<view class="item-left">
+					<van-icon name="info-o" color="#ed3f14" wx:if="{{item.state==='open'}}" />
+					<van-icon name="passed" color="#ed3f14" wx:else />
+				</view>
+				<view class="item-right" bindtap="toWebView" data-url="{{item.html_url}}">
+					<view class="item-right-c">
+						<text  style="color:#1c2438;font-size:24rpx; word-break: break-all">{{item.title}}</text>
+						<!-- <text  style="color:#80848f;font-size:24rpx;margin-top:10rpx;">{{item.body}}</text> -->
+						<text  style="color:#80848f;font-size:24rpx;margin-top:10rpx">{{item.comments}} comments</text>
+						<text  style="color:#80848f;font-size:20rpx;margin-top:10rpx">#{{item.number}} open {{item.created_at}} by {{item.user.login}}</text>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

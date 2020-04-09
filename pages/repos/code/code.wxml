@@ -1,0 +1,12 @@
+<!--pages/repos/code/code.wxml-->
+<view>
+  <view class="item-view">
+    <block wx:for="{{array}}">
+      <view class="item-list" bindtap="toNext" data-path="{{item.path}}" data-type="{{item.type}}">
+          <text>{{item.name}}</text>
+          <van-icon name="arrow" wx:if="{{item.type === 'dir'}}"/>
+      </view>
+    </block>
+    <view style="height:20rpx;"></view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+/* pages/repos/code/viewCode/viewCode.wxss */
+.code-view{
+  background:#f8f8f9 ;
+  border-radius: 9rpx;
+  padding:20rpx 20rpx 10rpx 20rpx;
+}

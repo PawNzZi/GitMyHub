@@ -1,0 +1,34 @@
+<!--component/item/item.wxml-->
+      <view class="item" bindtap="toRepoDetail" data-repo="{{repo_link}}">
+            <view class="item-head">
+              <view>
+                <van-icon name="bookmark" size="25px" /> 
+              </view>
+              <view style="font-size:30rpx;color:#495060;margin-left:20rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{repo}}</view>
+            </view>
+            <view style="font-size:26rpx;color:#80848f;margin-left:20rpx;margin-right:20rpx">{{desc}}</view>
+            <view class="item-datainfo">
+              <view class="lang">
+                <van-icon name="smile" size="15px" color="{{color}}"/>
+                <view style="font-size:20rpx;color:#80848f;margin-left:8rpx">{{lang!=""?lang:"No Language"}}</view>
+              </view>
+              <view class="lang">
+                <van-icon name="star" size="15px"/>
+                <view style="font-size:20rpx;color:#80848f;margin-left:8rpx">{{stars}}</view>
+              </view>
+              <view class="lang">
+                <van-icon name="cluster" size="15px"/>
+                <view style="font-size:20rpx;color:#80848f;margin-left:8rpx">{{forks}}</view>
+              </view>
+            </view>
+            <view class="item-bottom" wx:if="{{type == 0}}">
+              <van-icon name="fire" size="18px" color="#ed3f14"/>
+              <view wx:if="{{currentSince === 'Daily'}}" style="font-size:22rpx;color:#ed3f14;margin-left:15rpx">{{added_stars!=""?added_stars+' stars this day':"github没告诉我"}}</view>
+              <view wx:elif="{{currentSince === 'Weekly'}}" style="font-size:22rpx;color:#ed3f14;margin-left:15rpx">{{added_stars!=""?added_stars+' stars this week':"github没告诉我"}}</view>
+              <view wx:elif="{{currentSince === 'Monthly'}} "style="font-size:22rpx;color:#ed3f14;margin-left:15rpx">{{added_stars!=""?added_stars+' stars this month':"github没告诉我"}}</view>
+            </view>
+            <view class="item-bottom" wx:else>
+              <van-icon name="chart-trending-o" size="18px" color="#ed3f14"/>
+              <view style="font-size:22rpx;color:#ed3f14;margin-left:15rpx">{{added_stars!=""?added_stars:"github没告诉我"}}</view>
+            </view>
+          </view>

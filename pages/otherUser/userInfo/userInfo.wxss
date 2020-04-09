@@ -1,0 +1,54 @@
+/* pages/otherUser/userInfo/userInfo.wxss */
+.head-view{
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 1
+}
+.select-right{
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  width: 100%;
+  padding-left: 70rpx;
+  padding-right: 70rpx;
+  justify-content: space-between
+}
+.select-repo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select{
+  font-size: 30rpx;
+  color: #0387FE;
+  font-weight: bold;
+}
+.unselect{
+  font-size: 30rpx;
+  color: #1c2438;
+  font-weight: bold;
+}
+.bottom-line{
+  height: 5rpx;
+  width: 30rpx;
+  background: #0387FE;
+  margin-top: 10rpx;
+}
+.item-view{
+  margin-top: 80rpx;
+}
+.follow-view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f8f8f9;
+  border-radius: 9rpx;
+  padding: 20rpx 20rpx 20rpx 30rpx;
+  margin: 15rpx 30rpx;
+}
