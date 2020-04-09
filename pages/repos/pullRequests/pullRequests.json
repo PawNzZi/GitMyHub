@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "Pull Request",
+  "backgroundTextStyle": "dark",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "van-icon": "../../../dist/icon/index",
+    "van-image": "../../../dist/image/index"
+  }
+}

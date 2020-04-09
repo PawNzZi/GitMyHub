@@ -1,0 +1,7 @@
+{
+  
+  "usingComponents": {
+    "component-item": "../../../component/item/item",
+    "van-image": "../../../dist/image/index"
+  }
+}

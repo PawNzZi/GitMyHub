@@ -1,0 +1,28 @@
+/* component/user-item/index.wxss */
+.user-view{
+  display: flex;
+  flex-direction: row;
+  background: #f8f8f9;
+  border-radius: 9rpx;
+  margin: 15rpx 30rpx;
+  padding: 20rpx 20rpx 20rpx 40rpx;
+
+}
+
+.right-view{
+  display: flex;
+  flex-direction: column; 
+  margin-left: 30rpx;
+  word-break: break-all
+}
+.right-mid{
+  display: flex;
+  flex-direction: row;
+  margin-top:10rpx;
+  white-space: pre-line;
+}
+.repo-name{
+  color:#0387FE;
+  font-size:26rpx;
+  margin-left:15rpx;
+}

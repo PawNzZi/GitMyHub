@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/activity/activity",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/search/searchResult/searchResult",
+    "pages/repos/repos",
+    "pages/otherUser/otherUser",
+    "pages/repos/event/event",
+    "pages/repos/Issues/Issues",
+    "pages/repos/pullRequests/pullRequests",
+    "pages/repos/code/code",
+    "pages/otherUser/userInfo/userInfo",
+    "pages/repos/code/viewCode/viewCode",
+    "pages/webView/webView"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#0387FE",
+    "color": "#8a8a8a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Trending",
+        "iconPath": "/images/untrending.png",
+        "selectedIconPath": "/images/trending.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "Search",
+        "iconPath": "/images/unsearch.png",
+        "selectedIconPath": "/images/search.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "Activity",
+        "iconPath": "/images/unactivity.png",
+        "selectedIconPath": "/images/activity.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "Me",
+        "iconPath": "/images/unme.png",
+        "selectedIconPath": "/images/me.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 15000,
+    "downloadFile": 15000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

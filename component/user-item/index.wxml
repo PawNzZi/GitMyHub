@@ -1,0 +1,16 @@
+<!--component/user-item/index.wxml-->
+<view class="user-view">
+  <view class="left-view">
+    <van-image use-loading-slot round width="50" height="50" src="{{avatar}}">
+      <van-loading slot="loading" type="spinner" size="20" vertical/>
+    </van-image>
+  </view>
+  <view class="right-view">
+    <view style="color:#1c2438;font-size:28rpx;font-weight:bold">{{username}}</view>
+    <view class="right-mid">
+      <van-icon name="medal-o" color="#0387FE"/>
+      <view class="repo-name" style=";">{{reponame}}</view>
+    </view> 
+    <view style="color:#80848f;font-size:22rpx;margin-top:10rpx">{{desc}}</view>
+  </view>
+</view>
