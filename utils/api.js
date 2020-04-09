@@ -1,5 +1,5 @@
 const App = getApp();
-var HOST_URL = 'https://api.github.com'
+var HOST_URL = 'https://blog.lingyikz.cn'
 var requestHandler = {
   success: function (res) { },
   fail: function () { },
