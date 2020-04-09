@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "Repos",
-  "usingComponents": {
-    "van-image": "../../../dist/image/index",
-    "van-icon": "../../../dist/icon/index",
-    "towxml":"../../../towxml/towxml"
-
-  }
-}

@@ -1,6 +1,0 @@
-<!--pages/repos/code/viewCode/viewCode.wxml-->
-<view>
-  <view class="code-view">
-    <towxml nodes="{{article}}"/>
-  </view>
-</view>

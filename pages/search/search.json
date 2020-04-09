@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "Search",
-  "navigationBarBackgroundColor": "#0387FE",
-  "navigationBarTextStyle": "white",
-  "usingComponents": {
-    "van-search": "../../../dist/search/index",
-    "van-icon": "../../../dist/icon/index"
-  }
-}
