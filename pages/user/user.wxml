@@ -72,6 +72,6 @@
       <view class="version">
          <text style="color:#80848f;font-size:22rpx;">GitMyHub For Github</text> 
          <text style="color:#80848f;font-size:22rpx;margin-top:10rpx">v 1.0</text>
-         <text style="color:#80848f;font-size:22rpx;margin-top:10rpx">项目已在gitHub开源，有兴趣给个Star吧</text>
+         <text style="color:#80848f;font-size:22rpx;margin-top:10rpx" bindtap="toGitMyHub">项目已在gitHub开源，点我给个Star吧</text>
       </view>
 </view>

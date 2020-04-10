@@ -1,9 +1,9 @@
 {
+  "navigationBarTextStyle": "white",
   "navigationBarTitleText": "Me",
   "enablePullDownRefresh": true ,
   "backgroundTextStyle": "dark" ,
   "navigationBarBackgroundColor": "#0387FE",
-  "navigationBarTextStyle": "white",
   "usingComponents": {
     "van-image": "../../dist/image/index",
     "van-icon": "../../dist/icon/index"

@@ -8,7 +8,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-
   },
 
   /**
@@ -37,7 +36,7 @@ Page({
         wx.hideLoading();
         var str = res.content;
         str = str.replace(/\ +/g,"");   
-        console.log(str);
+        // console.log(str);
         var content = Base64.baseDecode(str);
         let result = app.towxml(content,'markdown'
         );

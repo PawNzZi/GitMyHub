@@ -152,5 +152,11 @@ Page({
     wx.navigateTo({
       url: '/pages/otherUser/userInfo/userInfo?selectType=' + selectType + '&userName=' + userName,
     })
+  },
+  toGitMyHub:function(){
+    var repo_link = 'PawNzZi/GitMyHub'
+    wx.navigateTo({
+      url: '/pages/repos/repos?repo=' + repo_link,
+    })
   }
 })
