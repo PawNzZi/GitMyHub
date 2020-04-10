@@ -108,6 +108,12 @@ Page({
     }
     wx.stopPullDownRefresh();
   },
+   /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  },
   toRepoDetail:function(e){
     var repo_link = e.currentTarget.dataset.author + '/' + e.currentTarget.dataset.name;
     console.log(repo_link)
