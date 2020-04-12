@@ -9,7 +9,7 @@
         <view style="color:#80848f;font-size:26rpx;margin-top:8rpx">Created {{userInfo.created_at}}</view>
       </view>
       <view class="tool-view">
-        <view class="item-view">
+        <view class="item-view" bindtap="toList" data-type="0">
             <text style="color:#1c2438;font-size:30rpx;" bindtap="toList" data-type="0">{{userInfo.public_repos}}</text>
             <text style="color:#495060;font-size:24rpx;margin-top:10rpx;">Repositories</text>
         </view>
@@ -17,12 +17,12 @@
             <text style="color:#1c2438;font-size:30rpx;">{{stars}}</text>
             <text style="color:#495060;font-size:24rpx;margin-top:10rpx;">Stars</text>
         </view> -->
-        <view class="item-view">
-            <text style="color:#1c2438;font-size:30rpx;" bindtap="toList" data-type="2">{{userInfo.followers}}</text>
+        <view class="item-view" bindtap="toList" data-type="2">
+            <text style="color:#1c2438;font-size:30rpx;" >{{userInfo.followers}}</text>
             <text style="color:#495060;font-size:24rpx;margin-top:10rpx;">Follower</text>
         </view>
-        <view class="item-view">
-            <text style="color:#1c2438;font-size:30rpx;" bindtap="toList" data-type="3">{{userInfo.following}}</text>
+        <view class="item-view" bindtap="toList" data-type="3">
+            <text style="color:#1c2438;font-size:30rpx;" >{{userInfo.following}}</text>
             <text style="color:#495060;font-size:24rpx;margin-top:10rpx;">Following</text>
         </view>
       </view>
