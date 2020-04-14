@@ -166,7 +166,7 @@ Page({
     for (var i = 0; i < array.length; i++) {
       var t = array[i].created_at;
       var datas = dateTool.getDateDiff(new Date(t).getTime());
-      console.log(datas)
+      // console.log(datas)
       array[i].created_at = datas;
     }
     return array;

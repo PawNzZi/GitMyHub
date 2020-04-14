@@ -9,6 +9,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    article:'',
+    progress:0,
     issues:0,
     pulls:0,
     events:0,
@@ -83,7 +85,6 @@ Page({
     }, data)
   },
   getReadMeInfo: function (repo_link,data) {
-
     var _this = this;
     Api.requestGet('/repos/' + repo_link + '/readme', {
       success(res) {
@@ -96,9 +97,33 @@ Page({
         // 更新解析数据
         _this.setData({
           article:result,
-            }); 
+          }); 
       }
     }, data)
+    var interval = setInterval(function () {  
+      var article = _this.data.article;
+      var progress = _this.data.progress;
+      progress ++;
+      console.log('article:'+article);
+      if(article == ''){
+        console.log('if');
+        if(progress >= 99){
+          _this.setData({
+            progress:99
+          })
+        }else{
+          _this.setData({
+            progress:progress
+          })
+        }
+      }else{
+        console.log('elseif');
+        _this.setData({
+          progress:100
+        })
+        clearInterval(interval)
+      }
+    }, 10) //循环间隔 单位ms
   },
   toNextPage:function(e){
     var type = e.currentTarget.dataset.type;

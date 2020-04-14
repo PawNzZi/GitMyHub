@@ -3,6 +3,7 @@
   "usingComponents": {
     "van-image": "../../../dist/image/index",
     "van-icon": "../../../dist/icon/index",
+    "van-progress": "../../../dist/progress/index",
     "towxml":"../../../towxml/towxml"
 
   }

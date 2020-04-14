@@ -72,6 +72,7 @@
   font-size: 38rpx;
   font-weight: bold;
   color: #1c2438;
+  margin-bottom: 30rpx;
 }
 .htmlTowxml{
   background: #f8f8f9;

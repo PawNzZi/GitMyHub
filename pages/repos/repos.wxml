@@ -66,6 +66,9 @@
   </view>
   <!-- readme 布局 -->
   <view class="readme-title">· READ-ME ·</view>
+  <view style="width:600rpx">
+      <van-progress percentage="{{progress}}" show-pivot="{{false}}"/>
+  </view>
   <view class="htmlTowxml">
     <!-- <template is="wxParse" data="{{wxParseData:article.nodes}}"/> -->
     <towxml nodes="{{article}}"/>

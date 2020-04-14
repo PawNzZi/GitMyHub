@@ -137,10 +137,10 @@ Page({
     }
     network.requestGet('/repositories',{
       success(res){
-        wx.hideLoading();
         _this.setData({
           array:res
         })
+        wx.hideLoading();
       }
     },data)
 
@@ -154,10 +154,10 @@ Page({
     }
     network.requestGet('/developers', {
       success(res) {
-        wx.hideLoading();
         _this.setData({
           array: res
         })
+        wx.hideLoading();
       }
     }, data)
   },
@@ -168,7 +168,7 @@ Page({
     }
     network.requestGet('/languages', {
       success(res) {
-        wx.hideLoading();
+        // wx.hideLoading();
         console.log(res);
         _this.setData({
           langArray: res.items
